@@ -1,0 +1,29 @@
+type IdChanged @entity(immutable: true) {
+  id: Bytes!
+  setter: Bytes! # address
+  oldId: BigInt! # uint256
+  newId: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type NameChanged @entity(immutable: true) {
+  id: Bytes!
+  setter: Bytes! # address
+  oldName: String! # string
+  newName: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Transfer @entity(immutable: true) {
+  id: Bytes!
+  from: Bytes! # address
+  to: Bytes! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

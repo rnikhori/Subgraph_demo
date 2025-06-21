@@ -1,0 +1,8 @@
+{
+  "arbitrum-sepolia": {
+    "SimpleWallet": {
+      "address": "0x38356D1BBfE2b0028A9fC3c38a3dAe03Ff32c6a0",
+      "startBlock": 8595266
+    }
+  }
+}
